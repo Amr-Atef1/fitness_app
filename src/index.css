@@ -1,0 +1,107 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #fffafb;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  width:0;
+}
+
+.vegeta{
+  position: absolute;
+  top:0px;
+  right:80px;
+  width:700px;
+  height:900px;
+  border-bottom-left-radius:50px;
+} 
+
+.bodyPart-card{
+  transform: scale(1,1);
+  transition: 0.3s all ease-in-out;
+}
+.bodyPart-card:hover{
+  transform: scale(1.1,1.1);
+}
+
+.right-arrow,.left-arrow {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FF2625;
+  font-size: 25px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -10px;
+  right: 100px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.right-arrow {
+  right: 40px;
+}
+
+
+.exercise-card {
+  width: 400px;
+  height: 445px;
+  background: #fff;
+  border-top: 4px solid #FF2625;
+  border-bottom-left-radius: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+.exercise-card:hover{
+  transform: scale(1.1,1.1);
+}
+.detail-image {
+  width: 729px;
+  height: 742px;
+}
+.exercise-video {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 387px;
+  height: 400px;
+  text-decoration: none;
+  background-color: white;
+  border-top-left-radius: 20px;
+}
+@media screen and (max-width: 1620px) {
+  .vegeta {
+    width: 600px;
+    right: 50px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .vegeta {
+    display: none;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .detail-image {
+    width: 300px;
+    height: 300px;
+  }
+
+}
